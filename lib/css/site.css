@@ -1,0 +1,108 @@
+@charset "utf-8";
+.cl_fix {
+ display:block!important;
+ float:none!important;
+ clear:both!important;
+ content:" "
+}
+.cr_fix {
+ display:none!important
+}
+#wpwm_hideBody {
+ left:0;
+ position:fixed;
+ right:0;
+ top:0;
+ bottom:0;
+ width:100%;
+ z-index:999995;
+ overflow:auto
+}
+#wpwm_popBoxOut {
+ margin:3% 25%;
+ padding:10px;
+ position:relative;
+ width:calc(50% - 20px);
+ z-index:999996
+}
+.wpwm-box {
+ z-index:999997
+}
+#wpwm_popBox {
+ background:#FFF;
+ padding:20px;
+ z-index:999998;
+ -webkit-border-radius:1px;
+ -moz-border-radius:1px;
+ border-radius:1px
+}
+#wpwm_popBox>p {
+ margin:0
+}
+#wpwm_popBox iframe, #wpwm_popBox img {
+ max-width:100%
+}
+#wpwm_popClose {
+ cursor:pointer;
+ font-size:24px;
+ line-height:24px;
+ position:absolute;
+ right:15px;
+ top:10px;
+ color:#999
+}
+#wpwm_popClose:hover {
+ color:#666
+}
+.black-striped-body {
+ background:url(../img/stripe-black.png)
+}
+.black-white-striped-body, .white-striped-body {
+ background:url(../img/stripe-white.png)
+}
+.black-color-body, .bootstrap-body {
+ background:url(../img/color-black.png)
+}
+.black-white-color-body, .white-color-body {
+ background:url(../img/color-white.png)
+}
+.black-color-body #wpwm_popBoxOut, .black-striped-body #wpwm_popBoxOut, .black-white-color-body #wpwm_popBoxOut, .black-white-striped-body #wpwm_popBoxOut {
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ border-radius:5px;
+ background:url(../img/border-black.png)
+}
+.white-color-body #wpwm_popBoxOut, .white-striped-body #wpwm_popBoxOut {
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ border-radius:5px;
+ background:url(../img/border-white.png)
+}
+.bootstrap-body #wpwm_popBoxOut {
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ border-radius:5px;
+ background:#fff;
+ -webkit-box-shadow:0 0 15px -5px #000;
+ -moz-box-shadow:0 0 15px -5px #000;
+ box-shadow:0 0 15px -5px #000
+}
+.bootstrap-body #wpwm_popBox {
+ padding:15px
+}
+.bootstrap-body #wpwm_popClose {
+ right:10px;
+ top:5px
+}
+@media only screen and (max-width :1200px) {
+#wpwm_popBoxOut {
+margin:3% 15%;
+width:calc(70% - 20px)
+}
+}
+@media only screen and (max-width :980px) {
+#wpwm_popBoxOut {
+margin:5%;
+width:calc(90% - 20px)
+}
+}
